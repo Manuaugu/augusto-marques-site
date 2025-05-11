@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Augusto Marques</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 16px;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #fff;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      max-width: 90%;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #218838;
+    }
+    .btn span {
+      margin-right: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+      width: 100%;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .submit-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <img src="https://via.placeholder.com/120" alt="Foto de perfil" class="avatar" />
+      <h1>Augusto Marques</h1>
+      <p>Consultor de Viagens & Gestor de Anúncios<br/>Transformo objectivos em resultados.</p>
+
+      <a class="btn" href="https://forms.gle/teulink_viagem"><span>✈️</span>Quero planear uma viagem</a>
+      <a class="btn" href="https://forms.gle/teulink_anuncios"><span>📈</span>Quero fazer anúncios</a>
+      <a class="btn" href="https://wa.me/351963103740"><span>💬</span>Fala comigo no WhatsApp</a>
+      <a class="btn" href="mailto:contacto@mvazmarques.com"><span>📩</span>Envia-me um email</a>
+
+      <form action="https://formspree.io/f/teu_endpoint" method="POST">
+        <input type="text" name="nome" placeholder="O teu nome" required />
+        <input type="email" name="email" placeholder="O teu email" required />
+        <textarea name="mensagem" rows="5" placeholder="A tua mensagem..." required></textarea>
+        <button type="submit" class="submit-btn">Enviar mensagem</button>
+      </form>
+
+      <footer>
+        © 2025 Augusto Marques
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
